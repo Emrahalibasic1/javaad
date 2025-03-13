@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:id="@+id/linearLayoutNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <EditText android:id="@+id/editTextFirstNumber"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:hint="1st Number"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText android:id="@+id/editTextSecondNumber"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:hint="2nd Number"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+
+        <TextView android:id="@+id/editTextResult"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="Result"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearLayoutOperation"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/buttonAddition"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Add"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:onClick="clickButtonAdd" />
+
+        <Button android:id="@+id/buttonSubtraction"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Sub"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickButtonSub" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearLayoutOperation2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/buttonMultiplication"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Mno"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:onClick="clickButtonMul" />
+
+        <Button android:id="@+id/buttonDivision"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:text="Djel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickButtonDiv" />
+
+    </LinearLayout>
+
+</LinearLayout>
